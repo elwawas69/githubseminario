@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start; /* Alineación a la izquierda */
+}
+
+.links li {
+    margin: 5px;
+    flex-shrink: 0; /* Evita que los elementos se reduzcan */
+}
+
+.links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px; /* Tamaño reducido */
+    padding: 5px 8px; /* Padding reducido */
+    background: #e0e0e0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+e {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.timeline-event {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.timeline-event:nth-child(3n+1) {
+    background-color: #FF6347; /* Rojo */
+}
+
+.timeline-event:nth-child(3n+2) {
+    background-color: #FFD700; /* Amarillo */
+}
+
+.timeline-event:nth-child(3n+3) {
+    background-color: #1E90FF; /* Azul */
+}
+
+.timeline-event:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+    border-color: #5A9;
+}
+
+.timeline-event h3 {
+    margin: 0 0 5px;
+    color: inherit; /* Sin color */
+}
+
+.timeline-event p {
+    margin: 5px 0 0;
+    color: inherit; /* Sin color */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    padding: 20px;
+}
+.grid-item {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    font-size: 18px;
+}
